@@ -1,38 +1,226 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <table>
-        <thead>
-            <th>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        /* Collapse */
+        border-collapse: collapse;
+        /* round table */
+        border-radius: 10px;
+        background-color: black;
+        /* Border Style */
+        /*dotted     
+        dashed     
+        solid     
+        double     
+        groove     
+        ridge     
+        inset     
+        outset     
+        none     
+        hidden  */
+        /* Border color */
+        border-color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Table Cells -->
+    <td>Hello World</td>
 
-            </th>
+    <!-- Table Rows -->
+    <tr>
+      Hello World
+    </tr>
 
-        </thead>
-        <tbody>
-            <th>
+    <!-- Table Headers -->
+    <th>Hello World</th>
 
-            </th>
+    <!-- HTML Table Width -->
+    <table style="width: 100px"></table>
 
-        </tbody>
-        <tfoot>
-            <th>
-                
-            </th>
-
-
-        </tfoot>
-        <th>Hallo
-            <tr>
-                <td>Test</td>
-                <td></td>
-            </tr>
-        </th>
+    <!-- HTML Table Column Width -->
+    <table style="width: 100%">
+      <tr>
+        <th style="width: 70%">Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
     </table>
-</body>
+
+    <!-- HTML Table Row Height -->
+    <table style="width: 100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr style="height: 200px">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <!-- HTML Table Headers -->
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <!-- Vertical Table Headers -->
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+    <!-- Header for Multiple Columns -->
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <!-- Table Caption -->
+    <table style="width: 100%">
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+
+    <!-- HTML Table Colspan & Rowspan -->
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+
+    <!-- HTML Table Colgroup -->
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+    <table>
+      <thead>
+        <th></th>
+      </thead>
+      <tbody>
+        <th></th>
+      </tbody>
+      <tfoot>
+        <th></th>
+      </tfoot>
+      <th>
+        Hallo
+        <tr>
+          <td>Test</td>
+          <td></td>
+        </tr>
+      </th>
+    </table>
+  </body>
 </html>
